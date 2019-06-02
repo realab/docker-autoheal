@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  vpn:
+  autoheal:
     build: ./
     environment:
       - AUTOHEAL_INTERVAL=30
