@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  vpn:
+    build: ./
+    environment:
+      - AUTOHEAL_INTERVAL=30
+      - AUTOHEAL_START_PERIOD=180
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
